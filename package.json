@@ -1,28 +1,26 @@
 {
-  "name": "backend",
+  "name": "react-express-prisma-s3",
   "version": "1.0.0",
-  "description": "",
+  "description": "Práctica de subir archivos a aws s3 con react ",
   "main": "index.js",
-  "type": "module",
-  "dependencies": {
-    "@aws-sdk/client-s3": "^3.100.0",
-    "@aws-sdk/s3-request-presigner": "^3.100.0",
-    "@prisma/client": "^4.1.0",
-    "aws-sdk": "^2.853.0",
-    "dotenv": "^8.2.0",
-    "express": "^5.0.0-beta.1",
-    "multer": "^1.4.5-lts.1",
-    "sharp": "^0.30.6"
-  },
   "scripts": {
-    "start": "node server.js",
-    "dev": "npx nodemon server.js"
+    "dev": "nodemon server.js",
+    "start": "node server.js"
   },
-  "keywords": [],
-  "author": "",
+  "author": "Julio Rubén Sanic Martínez",
   "license": "ISC",
   "devDependencies": {
-    "nodemon": "^2.0.16",
-    "prisma": "^4.1.0"
+    "nodemon": "^3.1.0",
+    "prisma": "^5.11.0"
+  },
+  "dependencies": {
+    "@aws-sdk/client-s3": "^3.535.0",
+    "@aws-sdk/s3-request-presigner": "^3.535.0",
+    "@prisma/client": "^5.11.0",
+    "dotenv": "^16.4.5",
+    "express": "^4.18.3",
+    "multer": "^1.4.5-lts.1",
+    "sharp": "^0.33.2",
+    "uuid": "^9.0.1"
   }
 }
